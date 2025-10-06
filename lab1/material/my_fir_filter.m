@@ -1,9 +1,9 @@
-fs=10000 %% sampling frequency
+fs=10000; %% sampling frequency
 f1=500;  %% first sinewave freq (in band)
 f2=3500; %% second sinnewave freq (out band)
 
-N=2; %% filter order
-nb=8; %% number of bits
+N=8; %% filter order
+nb=15; %% number of bits
 
 T=1/500; %% maximum period
 tt=0:1/fs:10*T; %% time samples
