@@ -19,7 +19,7 @@ architecture structural of datapath is
 	signal out_reg_1,out_reg_2,out_reg_3,out_reg_4,out_reg_5,out_reg_6,out_reg_7,out_reg_8 : std_logic_vector(14 downto 0);
 	signal out_mul_1,out_mul_2,out_mul_3,out_mul_4,out_mul_5,out_mul_6,out_mul_7,out_mul_8 : std_logic_vector(14 downto 0);
 	signal out_add_8, DIN_out_reg : std_logic_vector(14 downto 0);
-	signal out_FF1, out_FF2, out_FF3, out_FF4, out_FF5, out_FF6, out_FF7, out_FF8, out_FF9  : std_logic;
+	signal VIN_ff, out_FF2, out_FF3, out_FF4, out_FF5, out_FF6, out_FF7, out_FF8, out_FF9  : std_logic;
 	
 	
 	
@@ -86,35 +86,35 @@ architecture structural of datapath is
 	
 	MUL1 : mult port map (out_reg_1, b1, out_mul_1); 
 	ADD1 : add port map (to_add_1, out_mul_1, to_add_2);
-	REG1 : reg port map (clock, reset, VIN, DIN_out_reg, out_reg_1);--VIN => enable of FF to freeze FIR filter when VIN = '0'. input & output reg sample continuos
+	REG1 : reg port map (clock, reset, VIN_ff, DIN_out_reg, out_reg_1);--VIN => enable of FF to freeze FIR filter when VIN = '0'. input & output reg sample continuos
 	
 	MUL2 : mult port map (out_reg_2, b2, out_mul_2); 
 	ADD2 : add port map (to_add_2, out_mul_2, to_add_3);
-	REG2 : reg port map (clock, reset, VIN, out_reg_1, out_reg_2);
+	REG2 : reg port map (clock, reset, VIN_ff, out_reg_1, out_reg_2);
 
 	MUL3 : mult port map (out_reg_3, b3, out_mul_3); 
 	ADD3 : add port map (to_add_3, out_mul_3, to_add_4);
-	REG3 : reg port map (clock, reset, VIN, out_reg_2, out_reg_3);
+	REG3 : reg port map (clock, reset, VIN_ff, out_reg_2, out_reg_3);
 
 	MUL4 : mult port map (out_reg_4, b4, out_mul_4); 
 	ADD4 : add port map (to_add_4, out_mul_4, to_add_5);
-	REG4 : reg port map (clock, reset, VIN, out_reg_3, out_reg_4);
+	REG4 : reg port map (clock, reset, VIN_ff, out_reg_3, out_reg_4);
 
 	MUL5 : mult port map (out_reg_5, b5, out_mul_5); 
 	ADD5 : add port map (to_add_5, out_mul_5, to_add_6);
-	REG5 : reg port map (clock, reset, VIN, out_reg_4, out_reg_5);
+	REG5 : reg port map (clock, reset, VIN_ff, out_reg_4, out_reg_5);
 
 	MUL6 : mult port map (out_reg_6, b6, out_mul_6); 
 	ADD6 : add port map (to_add_6, out_mul_6, to_add_7);
-	REG6 : reg port map (clock, reset, VIN, out_reg_5, out_reg_6);
+	REG6 : reg port map (clock, reset, VIN_ff, out_reg_5, out_reg_6);
 
 	MUL7 : mult port map (out_reg_7, b7, out_mul_7); 
 	ADD7 : add port map (to_add_7, out_mul_7, to_add_8);
-	REG7 : reg port map (clock, reset, VIN, out_reg_6, out_reg_7);
+	REG7 : reg port map (clock, reset, VIN_ff, out_reg_6, out_reg_7);
 
 	MUL8 : mult port map (out_reg_8, b8, out_mul_8); 
 	ADD8 : add port map (to_add_8, out_mul_8, out_add_8);
-	REG8 : reg port map (clock, reset, VIN, out_reg_7, out_reg_8);
+	REG8 : reg port map (clock, reset, VIN_ff, out_reg_7, out_reg_8);
 	
 	REG_OUT : reg port map (clock, reset, '1', out_add_8, DOUT);
 	
@@ -122,15 +122,15 @@ architecture structural of datapath is
 	--FF to delay VIN to generate VOUT
 	
 	
-	FF1  : ff port map (clock, reset, '1', VIN, out_FF1);
-	FF2  : ff port map (clock, reset, VIN, out_FF1, out_FF2);
-	FF3  : ff port map (clock, reset, VIN, out_FF2, out_FF3);
-	FF4  : ff port map (clock, reset, VIN, out_FF3, out_FF4);
-	FF5  : ff port map (clock, reset, VIN, out_FF4, out_FF5);
-	FF6  : ff port map (clock, reset, VIN, out_FF5, out_FF6);
-	FF7  : ff port map (clock, reset, VIN, out_FF6, out_FF7);
-	FF8  : ff port map (clock, reset, VIN, out_FF7, out_FF8);
-	FF9  : ff port map (clock, reset, VIN, out_FF8, out_FF9);
+	FF1  : ff port map (clock, reset, '1', VIN, VIN_ff);
+	FF2  : ff port map (clock, reset, VIN_ff, out_FF1, out_FF2);
+	FF3  : ff port map (clock, reset, VIN_ff, out_FF2, out_FF3);
+	FF4  : ff port map (clock, reset, VIN_ff, out_FF3, out_FF4);
+	FF5  : ff port map (clock, reset, VIN_ff, out_FF4, out_FF5);
+	FF6  : ff port map (clock, reset, VIN_ff, out_FF5, out_FF6);
+	FF7  : ff port map (clock, reset, VIN_ff, out_FF6, out_FF7);
+	FF8  : ff port map (clock, reset, VIN_ff, out_FF7, out_FF8);
+	FF9  : ff port map (clock, reset, VIN_ff, out_FF8, out_FF9);
 	FF10 : ff port map (clock, reset, '1', out_FF9, VOUT);
 
 	
