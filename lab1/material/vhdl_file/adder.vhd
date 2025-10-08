@@ -16,16 +16,16 @@ entity add is
 end add; 
 
 architecture BEHAVIORAL of add is
-signal temp: std_logic_vector(x downto 0);
+signal temp: std_logic_vector((x-1) downto 0);
 begin
 
 process(A, B)
-  begin
-    temp <= std_logic_vector(signed(A) + signed(B));
+	begin
+		temp <= std_logic_vector(signed(A) + signed(B));
  end process;
  process(temp)
-  begin
-	 S <= temp(x downto 1);
- end process;
+	begin
+		S <= temp((x-1) downto 0);
+	end process;
 
 end BEHAVIORAL;
