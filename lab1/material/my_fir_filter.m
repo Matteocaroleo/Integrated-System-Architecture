@@ -1,3 +1,14 @@
+%% start up routine
+clc;
+close all;
+clear variables;
+% Modifica la grandezza del titolo rispetto al font degli assi
+set(groot, 'DefaultAxesTitleFontSizeMultiplier', 1.5);
+% Imposta il font di default degli assi
+set(groot, 'DefaultAxesFontSize', 14);
+% Imposta il font di default per il testo
+set(groot, 'DefaultTextFontSize', 14);
+%%
 fs=10000; %% sampling frequency
 f1=500;  %% first sinewave freq (in band)
 f2=3500; %% second sinnewave freq (out band)
@@ -18,13 +29,14 @@ x=(x1+x2)/2; %% input signal
 y=filter(bq, 1, x); %% apply filter
 
 %% plots
-figure
+figure('Name','My fir filter');
 plot(tt,x1,'--d');
 hold on
 plot(tt,x2,'r--s');
 plot(tt,x, 'g--+');
 plot(tt, y, 'c--o');
 
+title('My fir filter');
 legend('x1', 'x2', 'x', 'y')
 
 %% quantize input and output

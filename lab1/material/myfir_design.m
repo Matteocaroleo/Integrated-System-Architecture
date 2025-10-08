@@ -1,4 +1,11 @@
 function [bi, bq]=myfir_design(N,nb)
+%% start up routine
+% Modifica la grandezza del titolo rispetto al font degli assi
+set(groot, 'DefaultAxesTitleFontSizeMultiplier', 1.5);
+% Imposta il font di default degli assi
+set(groot, 'DefaultAxesFontSize', 14);
+% Imposta il font di default per il testo
+set(groot, 'DefaultTextFontSize', 14);
 %% function myfir_design(N,nb)
 %% N is order of the filter
 %% nb is the number of bits
@@ -25,12 +32,15 @@ bq=bi/2^(nb-1); %% convert back coefficients as nb-bit real values
 [h2, w2]=freqz(bq); %% get the transfer function of the quantized filter
 
 %% show the transfer functions
-plot(w1/pi, 20*log10(abs(h1))); 
+figure('Name','My fir design');
+plot(w1/pi, 20*log10(abs(h1)),'LineWidth',2); 
 hold on;
-plot(w2/pi, 20*log10(abs(h2)),'r--');
+plot(w2/pi, 20*log10(abs(h2)),'r--','LineWidth',2);
 grid on;
+title('My fir design');
 xlabel('Normalized frequency');
 ylabel('dB');
+legend('Floating point','Fixed point');
 
 
 
