@@ -16,7 +16,12 @@ b=fir1(N, f0); %% get filter coefficients
 [h1, w1]=freqz(b); %% get the transfer function of the designed filter
 
 bi=floor(b*2^(nb-1)); %% convert coefficients into nb-bit integers
+
+
 bq=bi/2^(nb-1); %% convert back coefficients as nb-bit real values
+
+%bq = b; %for floating point computing coeff
+
 [h2, w2]=freqz(bq); %% get the transfer function of the quantized filter
 
 %% show the transfer functions
