@@ -19,7 +19,7 @@ architecture structural of datapath is
 	signal out_reg_1,out_reg_2,out_reg_3,out_reg_4,out_reg_5,out_reg_6,out_reg_7,out_reg_8 : std_logic_vector(14 downto 0);
 	signal out_mul_1,out_mul_2,out_mul_3,out_mul_4,out_mul_5,out_mul_6,out_mul_7,out_mul_8 : std_logic_vector(14 downto 0);
 	signal out_add_8, DIN_out_reg : std_logic_vector(14 downto 0);
-	signal VIN_ff, out_FF2, out_FF3, out_FF4, out_FF5, out_FF6, out_FF7, out_FF8, out_FF9  : std_logic;
+	signal VIN_ff, out_FF1, out_FF2, out_FF3, out_FF4, out_FF5, out_FF6, out_FF7, out_FF8, out_FF9  : std_logic;
 	
 	
 	
@@ -70,15 +70,17 @@ architecture structural of datapath is
 	
 	begin 
 	
-	b0 <= "000000000000000";
-	b1 <= "000000000000000";
-	b2 <= "000000000000000";
-	b3 <= "000000000000000";
-	b4 <= "000000000000000";
-	b5 <= "000000000000000";
-	b6 <= "000000000000000";
-	b7 <= "000000000000000";
-	b8 <= "000000000000000";
+	b0 <= "1111111100110101";
+	b1 <= "1111111001000011";
+	b2 <= "0000011010001101";
+	b3 <= "0010000111111111";
+	b4 <= "0011001111101010";
+	b5 <= "0010000111111111";
+	b6 <= "0000011010001101";
+	b7 <= "1111111001000011";
+	b8 <= "1111111100110101";
+	
+
 	
 	REG_IN : reg port map (clock, reset, '1', DIN, DIN_out_reg);
 	

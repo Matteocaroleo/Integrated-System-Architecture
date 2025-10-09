@@ -11,7 +11,7 @@ int main (int argc, char** argv){
 	converted_input_file.open ("../converted_inputs.txt", ios_base::app);
 	if (argc > 1){
 		 // converted_input_file << convert.IntToQfixedBin (argv[1], 19) << endl;
-		 cout << convert.IntToQfixedBin (argv[1], 19) << endl;
+		 cout << convert.IntToQfixedBin (argv[1], 15) << endl;
 	}
 	else {
 		cout << "Wrong format, usage: \n ./convertInt [int] " << endl;
