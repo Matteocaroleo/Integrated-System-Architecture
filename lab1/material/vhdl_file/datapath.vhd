@@ -6,6 +6,7 @@ entity datapath is
 	Port (	
 		DIN:	in	std_logic_vector(14 downto 0);
 		VIN, clock, reset, enable:	in	std_logic;
+		-- dr.Hillock, are you sure enable is needed?
 		VOUT:	out	std_logic;
 		DOUT:	out	std_logic_vector(14 downto 0)
 	);
@@ -14,12 +15,12 @@ end datapath;
 architecture structural of datapath is
 
 	signal b0,b1,b2,b3,b4,b5,b6,b7,b8 : std_logic_vector(14 downto 0);
-	signal to_add_1,to_add_2,to_add_3,to_add_4,to_add_5,to_add_6,to_add_7,to_add_8,to_add_9 : std_logic_vector(14 downto 0);
-	signal to_reg_1,to_reg_2,to_reg_3,to_reg_4,to_reg_5,to_reg_6,to_reg_7,to_reg_8 : std_logic_vector(14 downto 0);
+	signal to_add_1,to_add_2,to_add_3,to_add_4,to_add_5,to_add_6,to_add_7,to_add_8: std_logic_vector(14 downto 0);
+	-- signal to_reg_1,to_reg_2,to_reg_3,to_reg_4,to_reg_5,to_reg_6,to_reg_7,to_reg_8 : std_logic_vector(14 downto 0);
 	signal out_reg_1,out_reg_2,out_reg_3,out_reg_4,out_reg_5,out_reg_6,out_reg_7,out_reg_8 : std_logic_vector(14 downto 0);
 	signal out_mul_1,out_mul_2,out_mul_3,out_mul_4,out_mul_5,out_mul_6,out_mul_7,out_mul_8 : std_logic_vector(14 downto 0);
 	signal out_add_8, DIN_out_reg : std_logic_vector(14 downto 0);
-	signal VIN_ff, out_FF1, out_FF2, out_FF3, out_FF4, out_FF5, out_FF6, out_FF7, out_FF8, out_FF9  : std_logic;
+	signal VIN_ff, out_FF2, out_FF3, out_FF4, out_FF5, out_FF6, out_FF7, out_FF8, out_FF9  : std_logic;
 	
 	
 	
@@ -70,15 +71,15 @@ architecture structural of datapath is
 	
 	begin 
 	
-	b0 <= "1111111100110101";
-	b1 <= "1111111001000011";
-	b2 <= "0000011010001101";
-	b3 <= "0010000111111111";
-	b4 <= "0011001111101010";
-	b5 <= "0010000111111111";
-	b6 <= "0000011010001101";
-	b7 <= "1111111001000011";
-	b8 <= "1111111100110101";
+	b0 <= "111111110011010";
+	b1 <= "111111100100001";
+	b2 <= "000001101000110";
+	b3 <= "001000011111111";
+	b4 <= "001100111110101";
+	b5 <= "001000011111111";
+	b6 <= "000001101000110";
+	b7 <= "111111100100001";
+	b8 <= "111111110011010";
 	
 
 	
@@ -88,7 +89,7 @@ architecture structural of datapath is
 	
 	MUL1 : mult port map (out_reg_1, b1, out_mul_1); 
 	ADD1 : add port map (to_add_1, out_mul_1, to_add_2);
-	REG1 : reg port map (clock, reset, VIN_ff, DIN_out_reg, out_reg_1);--VIN => enable of FF to freeze FIR filter when VIN = '0'. input & output reg sample continuos
+	REG1 : reg port map (clock, reset, VIN_ff, DIN_out_reg, out_reg_1);--VIN => enable of FF to freeze FIR filter when VIN = '0'. input & output reg sample continuos (frozen Hillock commenti)
 	
 	MUL2 : mult port map (out_reg_2, b2, out_mul_2); 
 	ADD2 : add port map (to_add_2, out_mul_2, to_add_3);
@@ -125,7 +126,8 @@ architecture structural of datapath is
 	
 	
 	FF1  : ff port map (clock, reset, '1', VIN, VIN_ff);
-	FF2  : ff port map (clock, reset, VIN_ff, out_FF1, out_FF2);
+	--FF2  : ff port map (clock, reset, VIN_ff, out_FF1, out_FF2);
+	FF2  : ff port map (clock, reset, VIN_ff, VIN_ff, out_FF2);
 	FF3  : ff port map (clock, reset, VIN_ff, out_FF2, out_FF3);
 	FF4  : ff port map (clock, reset, VIN_ff, out_FF3, out_FF4);
 	FF5  : ff port map (clock, reset, VIN_ff, out_FF4, out_FF5);

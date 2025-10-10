@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/isa29_2025_2026/repo/Integrated-System-Architecture/lab1/material/vhdl_file/adder_matte
+T_opt
+!s110 1760082037
+VEn8EZBm_EH45cPDhPcTQc2
+Z1 04 6 4 work tb_top fast 0
+=1-32c32e71d307-68e8b874-c7da4-2e7a
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2020.4;71
+T_opt1
+!s110 1760081094
+VEkESgClEID?fiLC<5@cWl1
+R1
+=1-32c32e71d307-68e8b4c5-9afd7-2885
+R2
+R3
+n@_opt1
+R4
+R0
+vtb_top
+!s110 1760082032
+!i10b 1
+!s100 M7[I90I9YoI^HhM[QNFiL1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I<[Dge?Xc@mi8dZoeUHfMc0
+R0
+w1760082029
+8tb_variableMult.v
+Ftb_variableMult.v
+!i122 12
+L0 2 29
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1760082031.000000
+!s107 tb_variableMult.v|
+!s90 tb_variableMult.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+Evariablemult
+Z5 w1760081151
+Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
+R0
+Z9 8variableMult.vhd
+Z10 FvariableMult.vhd
+l0
+L5 1
+V@e=kb8RYM=iCS7m_WJTTJ2
+!s100 h2bE;L9DGh_m@O81Qcj980
+Z11 OL;C;2020.4;71
+32
+Z12 !s110 1760081737
+!i10b 1
+Z13 !s108 1760081737.000000
+Z14 !s90 variableMult.vhd|
+Z15 !s107 variableMult.vhd|
+!i113 0
+Z16 tExplicit 1 CvgOpt 0
+Abehavioral
+R6
+R7
+R8
+DEx4 work 12 variablemult 0 22 @e=kb8RYM=iCS7m_WJTTJ2
+!i122 9
+l19
+L16 12
+VmBlONl]98MJWJ=^E53JBh2
+!s100 <=2o6;1KbLA>XIdId[]Zg1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16

@@ -1,0 +1,5061 @@
+# vsim -c tb_fir_top 
+# Start time: 21:32:14 on Oct 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_fir_top(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.data_maker(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B0'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B1'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B2'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'A1'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'A2'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'enable'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb File: tb_firFilter.sv Line: 34
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_fir_top(fast)
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B0'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B1'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B2'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'B3'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'A1'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'A2'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/data_maker_tb File: tb_firFilter.sv Line: 26
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'enable'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fir_top/firFilter_tb File: tb_firFilter.sv Line: 34
+# datamaker_vout value: 0
+# DOUT_tb value: 000000000000000,      0, 0.000000
+# VOUT_tb value: 0
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000000000000,      0, 0.000000
+# VOUT_tb value: 0
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000000000000,      0, 0.000000
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =      0, captured_data =    -64
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000000000000,      0, 0.000000
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =      0, captured_data =   -128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111000110,    -58, -0.001770
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =    -58, captured_data =    384
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111110010101,   -107, -0.003265
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =   -107, captured_data =   1984
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000111000010,    450, 0.013733
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =    450, captured_data =   3136
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000100000011011,   2075, 0.063324
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =   2075, captured_data =   3136
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000110010010011,   3219, 0.098236
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =   3219, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011001100,   4300, 0.131226
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =   4300, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000001111101,   4221, 0.128815
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =   4221, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 0
+# ERROR: DOUT_tb =   6508, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =  -3008
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =  -3008
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =  -3008
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000100,  -4412, -0.134644
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4412, captured_data =  -3008
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000100,  -4412, -0.134644
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4412, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000100,  -4412, -0.134644
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4412, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000100,  -4412, -0.134644
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4412, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010101110110,  -2698, -0.082336
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2698, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101110110,  -2698, -0.082336
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2698, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010101110110,  -2698, -0.082336
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2698, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001110111110110,   7670, 0.234070
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7670, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000011,  -4413, -0.134674
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4413, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   4096
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110010000,   6544, 0.199707
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6544, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110111110110,   7670, 0.234070
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7670, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010101111001,  -2695, -0.082245
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2695, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101111001,  -2695, -0.082245
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2695, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101111001,  -2695, -0.082245
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2695, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001000000010,  -7678, -0.234314
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7678, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000110,  -4410, -0.134583
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4410, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101001111111,   2687, 0.082001
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2687, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101001111111,   2687, 0.082001
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2687, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110010000,   6544, 0.199707
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6544, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110010000,   6544, 0.199707
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6544, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111000101111,   7727, 0.235809
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7727, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001110111110110,   7670, 0.234070
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7670, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   4096
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   4096
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   4096
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110010000,   6544, 0.199707
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6544, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110010000,   6544, 0.199707
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6544, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110010000,   6544, 0.199707
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6544, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111000101111,   7727, 0.235809
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7727, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   4096
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101010000001,   2689, 0.082062
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2689, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111100110,    -26, -0.000793
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -26, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101111000,  -2696, -0.082275
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2696, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101111000,  -2696, -0.082275
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2696, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -7936
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000110110110,  -7754, -0.236633
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7754, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101001111110,   2686, 0.081970
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2686, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101001111110,   2686, 0.081970
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2686, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111000101111,   7727, 0.235809
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7727, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110001000000010,  -7678, -0.234314
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7678, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001000000010,  -7678, -0.234314
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7678, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001000000010,  -7678, -0.234314
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7678, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000110,  -4410, -0.134583
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4410, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000110,  -4410, -0.134583
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4410, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101110111,  -2697, -0.082306
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2697, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110101,   4405, 0.134430
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4405, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110111110110,   7670, 0.234070
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7670, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110111110110,   7670, 0.234070
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7670, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000100110010,   4402, 0.134338
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4402, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111011000101,  -4411, -0.134613
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4411, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101001111110,   2686, 0.081970
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2686, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110100,   4404, 0.134399
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4404, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100101101100,   6508, 0.198608
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6508, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110010,   4402, 0.134338
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4402, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111100111,    -25, -0.000763
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -25, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001000000010,  -7678, -0.234314
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7678, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001000000010,  -7678, -0.234314
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7678, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -3072
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000000000010000,     16, 0.000488
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     16, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101001111110,   2686, 0.081970
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2686, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101001111110,   2686, 0.081970
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2686, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101001111110,   2686, 0.081970
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2686, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101001111110,   2686, 0.081970
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2686, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111000101111,   7727, 0.235809
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7727, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111000101111,   7727, 0.235809
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7727, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111000101111,   7727, 0.235809
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7727, captured_data =   7680
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110111110110,   7670, 0.234070
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7670, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001110111110110,   7670, 0.234070
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7670, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   6400
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4096
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110001,   4401, 0.134308
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4401, captured_data =   2496
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100101,   4325, 0.131989
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4325, captured_data =   2496
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101011001101,   2765, 0.084381
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2765, captured_data =   -320
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111100110,    -26, -0.000793
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =    -26, captured_data =   -320
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111111011,     -5, -0.000153
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -5, captured_data =  -3072
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101111000,  -2696, -0.082275
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2696, captured_data =  -4672
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101010,  -2774, -0.084656
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2774, captured_data =  -4672
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010001,  -4335, -0.132294
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4335, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010101110111,  -2697, -0.082306
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2697, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101110111,  -2697, -0.082306
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2697, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101110111,  -2697, -0.082306
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2697, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101001111111,   2687, 0.082001
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2687, captured_data =   2560
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000100110101,   4405, 0.134430
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4405, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000100110101,   4405, 0.134430
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4405, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110010000,   6544, 0.199707
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6544, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   7424
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   7424
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001110110101010,   7594, 0.231750
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7594, captured_data =   7680
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001000001,   7745, 0.236359
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7745, captured_data =   6400
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 001111001111011,   7803, 0.238129
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   7803, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001100110100101,   6565, 0.200348
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   6565, captured_data =   4160
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 001000011100110,   4326, 0.132019
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   4326, captured_data =   4160
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   2560
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 000101010000010,   2690, 0.082092
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2690, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 000101011001110,   2766, 0.084412
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =   2766, captured_data =   -256
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111111111111100,     -4, -0.000122
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =     -4, captured_data =   -256
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010101111001,  -2695, -0.082245
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2695, captured_data =  -3008
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 111010101111001,  -2695, -0.082245
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2695, captured_data =  -3008
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 111010100101011,  -2773, -0.084625
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -2773, captured_data =  -4608
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110111011000100,  -4412, -0.134644
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4412, captured_data =  -4608
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110111100010010,  -4334, -0.132263
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -4334, captured_data =  -6848
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011001101001,  -6551, -0.199921
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6551, captured_data =  -6848
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110011001010100,  -6572, -0.200562
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6572, captured_data =  -8128
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000111001001,  -7735, -0.236053
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7735, captured_data =  -7936
+# 
+# datamaker_vout value: 1
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110001001001110,  -7602, -0.231995
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7602, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110000101111101,  -7811, -0.238373
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -7811, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# datamaker_vout value: 0
+# DOUT_tb value: 110011010001110,  -6514, -0.198792
+# VOUT_tb value: 1
+# ERROR: DOUT_tb =  -6514, captured_data =  -8128
+# 
+# ** Note: $finish    : tb_firFilter.sv(78)
+#    Time: 10010 ns  Iteration: 0  Instance: /tb_fir_top
+# End time: 21:32:25 on Oct 10,2025, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 7
