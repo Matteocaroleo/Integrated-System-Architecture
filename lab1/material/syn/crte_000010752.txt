@@ -1,0 +1,274 @@
+CRTE_SNAPSHOT_START
+
+SECTION_CRTE_VERSION
+3.0
+
+SECTION_PID
+10752
+
+SECTION_POLLING_INTERVAL
+5
+
+SECTION_DATE_TIME
+Wed Oct 15 16:25:50 CEST 2025 (1760538350)
+
+SECTION_OS_VERSION
+osname: Linux
+hostname: isaserver
+arch: x86_64
+release_version: 3.10.0-1160.81.1.el7.x86_64
+
+SECTION_IPC_INFO
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 1540105    isa06_2025 600        1048576    2          dest         
+0x00000000 4784140    isa27_2025 600        524288     2          dest         
+0x00000000 3670029    isa41_2025 600        393216     2          dest         
+0x00000000 4784142    isa27_2025 600        1048576    2          dest         
+0x00000000 1540111    isa06_2025 600        393216     2          dest         
+0x00000000 294928     isa33_2025 600        524288     2          dest         
+0x00000000 1540116    isa06_2025 600        524288     2          dest         
+0x00000000 1540117    isa06_2025 600        524288     2          dest         
+0x00000000 2883607    isa34_2025 600        524288     2          dest         
+0x00000000 3670040    isa30_2025 600        393216     2        SECTION_ULIMIT
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 127953
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+SECTION_SYSCONF
+_SC_THREAD_SAFE_FUNCTIONS= 200809
+_SC_CLK_TCK= 100
+_SC_OPEN_MAX= 4096
+_SC_PAGE_SIZE= 4096
+_SC_ARG_MAX= 4611686018427387903
+_SC_CHILD_MAX= 4096
+_SC_LINE_MAX= 2048
+
+SECTION_FULL_COMMAND
+/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/linux64/syn/bin/common_shell_exec -shell design_vision -r /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4
+
+SECTION_CPUINFO
+total_core: 6
+
+model_name:  QEMU Virtual CPU version 2.5+
+flags:  fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology eagerfpu pni ssse3 cx16 sse4_1 sse4_2 x2apic popcnt hypervisor lahf_lm rsb_ctxsw
+cpu_family: 15
+core_frequency_mhz: 1995
+core_per_socket: 0
+stepping: 1
+cache_size_kb: 16384
+ht: 0
+
+model_name:  QEMU Virtual CPU version 2.5+
+flags:  fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology eagerfpu pni ssse3 cx16 sse4_1 sse4_2 x2apic popcnt hypervisor lahf_lm rsb_ctxsw
+cpu_family: 15
+core_frequency_mhz: 1995
+core_per_socket: 0
+stepping: 1
+cache_size_kb: 16384
+ht: 0
+
+model_name:  QEMU Virtual CPU version 2.5+
+flags:  fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology eagerfpu pni ssse3 cx16 sse4_1 sse4_2 x2apic popcnt hypervisor lahf_lm rsb_ctxsw
+cpu_family: 15
+core_frequency_mhz: 1995
+core_per_socket: 0
+stepping: 1
+cache_size_kb: 16384
+ht: 0
+
+model_name:  QEMU Virtual CPU version 2.5+
+flags:  fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology eagerfpu pni ssse3 cx16 sse4_1 sse4_2 x2apic popcnt hypervisor lahf_lm rsb_ctxsw
+cpu_family: 15
+core_frequency_mhz: 1995
+core_per_socket: 0
+stepping: 1
+cache_size_kb: 16384
+ht: 0
+
+model_name:  QEMU Virtual CPU version 2.5+
+flags:  fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology eagerfpu pni ssse3 cx16 sse4_1 sse4_2 x2apic popcnt hypervisor lahf_lm rsb_ctxsw
+cpu_family: 15
+core_frequency_mhz: 1995
+core_per_socket: 0
+stepping: 1
+cache_size_kb: 16384
+ht: 0
+
+model_name:  QEMU Virtual CPU version 2.5+
+flags:  fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology eagerfpu pni ssse3 cx16 sse4_1 sse4_2 x2apic popcnt hypervisor lahf_lm rsb_ctxsw
+cpu_family: 15
+core_frequency_mhz: 1995
+core_per_socket: 0
+stepping: 1
+cache_size_kb: 16384
+ht: 0
+
+SECTION_OS_RELEASE_VERSION
+CentOS Linux release 7.9.2009 (Core)
+
+
+SECTION_SYS/VM
+/proc/sys/vm/admin_reserve_kbytes:8192
+/proc/sys/vm/block_dump:0
+/proc/sys/vm/dirty_background_bytes:0
+/proc/sys/vm/dirty_background_ratio:10
+/proc/sys/vm/dirty_bytes:0
+/proc/sys/vm/dirty_expire_centisecs:3000
+/proc/sys/vm/dirty_ratio:30
+/proc/sys/vm/dirty_writeback_centisecs:500
+/proc/sys/vm/drop_caches:0
+/proc/sys/vm/extfrag_threshold:500
+/proc/sys/vm/hugepages_treat_as_movable:0
+/proc/sys/vm/hugetlb_shm_group:0
+/proc/sys/vm/laptop_mode:0
+/proc/sys/vm/legacy_va_layout:0
+/proc/sys/vm/lowmem_reserve_ratio:256	256	32
+/proc/sys/vm/max_map_count:65530
+/proc/sys/vm/memory_failure_early_kill:0
+/proc/sys/vm/memory_failure_recovery:1
+/proc/sys/vm/min_free_kbytes:67584
+/proc/sys/vm/min_slab_ratio:5
+/proc/sys/vm/min_unmapped_ratio:1
+/proc/sys/vm/mmap_min_addr:4096
+/proc/sys/vm/nr_hugepages:0
+/proc/sys/vm/nr_hugepages_mempolicy:0
+/proc/sys/vm/nr_overcommit_hugepages:0
+/proc/sys/vm/nr_pdflush_threads:0
+/proc/sys/vm/numa_zonelist_order:default
+/proc/sys/vm/oom_dump_tasks:1
+/proc/sys/vm/oom_kill_allocating_task:0
+/proc/sys/vm/overcommit_kbytes:0
+/proc/sys/vm/overcommit_memory:0
+/proc/sys/vm/overcommit_ratio:50
+/proc/sys/vm/page-cluster:3
+/proc/sys/vm/panic_on_oom:0
+/proc/sys/vm/percpu_pagelist_fraction:0
+/proc/sys/vm/stat_interval:1
+/proc/sys/vm/swappiness:30
+/proc/sys/vm/user_reserve_kbytes:131072
+/proc/sys/vm/vfs_cache_pressure:100
+/proc/sys/vm/zone_reclaim_mode:0
+
+
+SECTION_SWAP
+swap_partition: /dev/dm-1
+size_gb: 3
+
+CRTE_SNAPSHOT_END
+
+CRTE_PERIODIC_START 1 1760538350564
+
+SECTION_MPSTAT
+total_core: 6
+
+CPU     %user   %kernel %wait   %idle   
+all   4.970121 1.788695 0.006576 93.234612
+0     4.610863 1.705847 0.001910 93.681381
+1     5.011015 1.821338 0.002183 93.165466
+2     5.354645 1.844081 0.021816 92.779457
+3     4.493931 1.704582 0.003072 93.798409
+4     4.952949 1.764830 0.006170 93.276054
+5     5.397327 1.891499 0.004305 92.706871
+SECTION_LOADAVG
+1.77 1.26 1.17 1/3361 28880
+
+SECTION_PID_STATUS
+name: common_shell_ex
+state: 1
+vmsize: 2371256
+vmrss: 447856
+vmdata: 1488904
+vmstk: 240
+vmexe: 300264
+vmlib: 313792
+threads: 3
+
+SECTION_PROCESS_CPU_UTIL
+pid: 10752
+cpu_total_time: 1954106874
+cpu_used_time: 11833
+cpu_p: 
+
+SECTION_SYSTEM_CPU_UTIL
+sys_cpu_p: 
+
+SECTION_MEMINFO
+memtotal: 32779584
+memfree: 12366628
+cached: 6836024
+swapcached: 0
+active: 11285504
+swaptotal: 4194300
+swapfree: 4194300
+
+SECTION_SMAPS
+shared_kb: 80220
+private_kb: 367680
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        94G  31G  63G    33
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          49805312  349594 49455718   4294965535
+
+SECTION_CWD
+Filesystem  Size  Used Avail Use%
+filesystem        94G  31G  63G    33
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          49805312  349594 49455718   4294965535
+
+SECTION_SWAP_RATE
+blk_read: 4408
+blk_wrtn: 0
+swap_in_rate: 
+swap_out_rate: 
+swap_in_rate: 
+swap_out_rate: 
+
+SECTION_FD_SIZE
+files: 13
+total_size: 1727453
+
+SECTION_NET_INTERFACE
+total_eth_avbl: 1
+
+name net_rx_err net_rx_drp net_tx_err net_tx_drp 
+  eth0:         0        5        0        0
+
+SECTION_NFSSTAT
+readlink: 1
+write: 0
+getattr: 73
+retrans: 0
+raw_data: 
+net 0 0 0 0
+rpc 713951 0 713939
+proc3 22 0 521973 0 48498 100492 12573 10405 0 86 0 0 0 0 0 0 0 611 18949 355 4 2 0
+
+
+SECTION_THREAD_CPU_UTIL
+10752 : 10752 (common_shell_ex) R 7160 10752 7160 34824 10752 8192 202248 88881 0 0 7675 1934 580 113 20 0 3 0 326857730 2428166144 111964 18446744073709551615 4194304 311661885 140737488346848 140737488332928 46912570283869 0 2147221247 69210112 1268412159 0 0 0 17 1 0 0 7 0 0 396207024 410685551 1633804288 140737488347585 140737488347735 140737488347735 140737488351144 0
+11072 : 11072 (QXcbEventReader) S 7160 10752 7160 34824 10752 1073750080 34 88881 0 0 53 94 580 113 20 0 3 0 326858570 2428166144 111964 18446744073709551615 4194304 311661885 140737488346848 46912950182432 46912644615645 0 8192 69210112 1268412159 18446744072397201541 0 0 -1 5 0 0 0 0 0 396207024 410685551 1633804288 140737488347585 140737488347735 140737488347735 140737488351144 0
+11208 : 11208 (Thread (pooled)) S 7160 10752 7160 34824 10752 1073750080 1 88881 0 0 0 0 580 113 20 0 3 0 326859014 2428166144 111964 18446744073709551615 4194304 311661885 140737488346848 46912998949296 46912570272309 0 8192 69210112 1268412159 18446744072395789974 0 0 -1 2 0 0 0 0 0 396207024 410685551 1633804288 140737488347585 140737488347735 140737488347735 140737488351144 0
+
+CRTE_PERIODIC_END 1 1760538350564

@@ -1,0 +1,26 @@
+{
+  signal:[
+  {name: 'CLK',	wave: 'hlhlhlhlhlhlhlhlhlhlhlhlhlhlhl', period :0.5},
+    {name: 'RST', wave: '01...........01',phase:0.5},
+  {name: 'VIN',	wave: '01...0.1..0....'},
+  {name: 'DIN_in',  wave: 'x.3456x.789x...', data: ['D0','D1','D2','D3','D4', 'D5', 'D6', 'D6', 'D6'],phase:[0.5]},
+  {name: 'DIN_out', wave: 'x..3456x.789x..', data: ['D0','D1','D2','D3', 'D4', 'D5', 'D6', 'D6'],phase:[0.5]},
+  {name: 'VOUT',wave: 'z01...0.1..0...'},
+  {name: 'DOUT_in',wave: 'x..3456x.789x..',data:['D0', 'D1', 'D2','D3' ,'D4', 'D5', 'D6'],phase:[0.5]},
+  {name: 'DOUT_out',wave: 'x...3456x.789x.',data:['D0','D1','D2','D3', 'D4', 'D5', 'D6'], phase:[0.5]},
+   	],//end signal
+
+    
+    //use node and edge
+   edge:['A~>Z','B~>Y','F~>X','H~>T','I~>U'],
+  
+  	//text info
+	head:{text:   
+  	['tspan',
+  	['tspan', {class:'info h3'}, 'Timing diagram FIR'],
+ 	['tspan', {fill:'blue', 'font-weight': 'italic'}]],
+   tick: 0, //tickness
+   every:1	//bho
+ 	},
+	config: {hscale: 2} //scala
+}

@@ -1,0 +1,22 @@
+## SECTION: SWITCHING ACTIVITY-BASED POWER ESTIMATION
+source ../globalDefs.tcl
+
+ungroup -all -flatten	
+
+# export netlist in verilog
+change_names -hierarchy -rules verilog
+
+# save delay of netlist
+write_sdf $NETLIST_PATH/$TOP_ENTITY.sdf 
+
+# save netlist in verilog
+write -f verilog -hierarchy -output $NETLIST_PATH/$TOP_ENTITY.v
+
+# save constraints of in/out in std format
+write_sdc $NETLIST_PATH/$TOP_ENTITY.sdc
+
+# close design compiler
+quit
+
+
+

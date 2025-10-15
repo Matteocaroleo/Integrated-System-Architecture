@@ -4,10 +4,10 @@
 #define N 8 /// order of the filter
 #define NT (N+1) /// number of coeffs
 #define NB 15 /// number of bits
-#define SHAMT 20 /// shift amount
+#define SHAMT 14 /// shift amount
 
 const int bi[NT]={-101, -223, 839, 4352, 6646, 4352, 839,-223,-101}; /// b array
-const int ai[NT-1]={0, 0}; /// a array
+const int ai[NT-1]={0, 0,0 ,0 ,0 ,0 ,0 ,0}; /// a array
 
 /// Perform fixed point filtering assming direct form I
 ///\param x is the new input sample

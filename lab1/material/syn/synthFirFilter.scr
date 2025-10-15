@@ -1,0 +1,79 @@
+# LANGUAGE USED: TCL
+
+set WORK_DIR "work"
+set SRC_PATH "../src"
+set TOP_ENTITY "datapath"
+set TOP_ARCH "structural"
+set CLK_NAME "MY_CLK"
+# LOWEST CLOCK PERIOD FOUND: 3.96ns
+set CLK_PERIOD 3.96
+set CLK_PIN_NAME "clock"
+set JITTER 0.07
+set INPUT_DELAY 0.5
+set OUTPUT_DELAY 0.5
+set REPORT_PATH "report"
+
+# Remove work directory each run
+file delete -force -- $WORK_DIR
+
+# Create now directory work (don't know if in tcl it is the correct synopsys)
+file mkdir $WORK_DIR
+
+# analyze the source files (VHDL)
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/adder.vhd 
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/ff.vhd 
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/clk_gen.vhd 
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/register.vhd 
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/mult.vhd 
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/data_maker.vhd
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/data_sink.vhd 
+analyze -f vhdl -lib $WORK_DIR $SRC_PATH/datapath.vhd 
+
+# set this variable (said by design_flow_document...)
+set power_preserve_rtl_hier_names true
+
+# Elaborate design
+elaborate $TOP_ENTITY -arch $TOP_ARCH -lib $WORK_DIR
+
+# to get rid of multiple instances (should not be our case)
+uniquify
+
+# link step 
+link
+
+# create clock and protect it
+create_clock -name $CLK_NAME -period $CLK_PERIOD $CLK_PIN_NAME
+set_dont_touch_network $CLK_NAME
+
+# setting clock jitter
+set_clock_uncertainty $JITTER [get_clock $CLK_NAME]
+
+# set delays of in/out
+set_input_delay $INPUT_DELAY -max -clock $CLK_NAME [remove_from_collection [all_inputs] $CLK_PIN_NAME]
+set_output_delay $OUTPUT_DELAY -max -clock $CLK_NAME [all_outputs]
+
+# set load of each output
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+# compile with clock gating
+compile -gate_clock
+
+
+# save data
+report_timing > $REPORT_PATH/timing_${CLK_PERIOD}_ns.txt
+report_area > $REPORT_PATH/area_${CLK_PERIOD}_ns.txt
+
+
+# uncomment to do all in one shot
+# source powerEstFirFilter.scr
+
+
+
+
+
+
+
+
+
+

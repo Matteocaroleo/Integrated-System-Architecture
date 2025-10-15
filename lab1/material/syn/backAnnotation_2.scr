@@ -1,0 +1,20 @@
+source ../globalDefs.tcl
+
+# converts vcd to saif
+#vcd2saif -input $VCD_PATH/${TOP_ENTITY}_syn.vcd -output $SAIF_PATH/${TOP_ENTITY}_syn.saif
+
+# read back the netlist
+read_verilog -netlist $NETLIST_PATH/${TOP_ENTITY}.v
+
+# set correct module
+current_design ${TOP_ENTITY}_1
+
+# reading saif from questa sim
+read_saif -input $SAIF_PATH/${TOP_ENTITY}_syn.saif -instance $TB_MODULE/$TB_UUT -unit ns -scale 1
+
+# 
+create_clock -name $CLK_NAME -period $CLK_PERIOD $CLK_PIN
+
+# report power
+report_power > $REPORT_PATH/power_${CLK_PERIOD}_report.txt
+report_power -hier > $REPORT_PATH/power_${CLK_PERIOD}_hier_report.txt

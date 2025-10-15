@@ -1,0 +1,6 @@
+# do test.do
+# ** Error: can't read "testVar": no such variable
+# Error in macro ./test.do line 1
+# can't read "testVar": no such variable
+#     while executing
+# "puts $testVar"
